@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FastAgent 开发笔记本选型报告（香港采购）2026-08</title>
+<title>FastAgent 開發環境選型報告（香港採購）2026-08</title>
 <style>
   :root { --bg:#f5f6f8; --card:#ffffff; --ink:#1c2430; --muted:#5b6572; --line:#dfe3e8;
           --accent:#0b6e4f; --accent-bg:#e8f5ef; --warn:#9a6700; --warn-bg:#fff7e6; --bad:#b42318; --bad-bg:#fdecea; }
   * { box-sizing:border-box; }
-  body { font-family:"Segoe UI","Microsoft YaHei",system-ui,sans-serif; background:var(--bg); color:var(--ink);
+  body { font-family:"Segoe UI","Microsoft JhengHei","Microsoft YaHei",system-ui,sans-serif; background:var(--bg); color:var(--ink);
          margin:0; padding:24px 12px 60px; line-height:1.65; }
   .wrap { max-width:1080px; margin:0 auto; }
   h1 { font-size:26px; margin:0 0 4px; }
@@ -38,254 +38,285 @@
 <body>
 <div class="wrap">
 
-<h1>FastAgent 开发笔记本选型报告（香港采购）</h1>
-<div class="meta">生成日期：2026-08-26 ｜ 价格单位：港元（HK$）｜ 行情基准：香港官方商城 + 香港街头价（price.com.hk 等），下单前请以官网实时价为准</div>
+<h1>FastAgent 開發環境選型報告（香港採購）</h1>
+<div class="meta">生成日期：2026-08-26 ｜ 價格單位：港元（HK$）｜ 行情基準：香港官方商城 + 香港街頭價（price.com.hk 等），下單前請以官網實時價為準</div>
 
-<h2>一、需求与硬约束</h2>
+<h2>一、推薦總覽（先看這裡）</h2>
+
+<div class="verdict">
+  <h3>① 手提電腦首選：MSI Stealth 16 AI+ B3WH —— 官方 HK$29,999</h3>
+  <ul>
+    <li><b>購買連結</b>：<a href="https://hk-store.msi.com/products/stealth-16-ai-b3wh">https://hk-store.msi.com/products/stealth-16-ai-b3wh</a></li>
+    <li><b>配置</b>：Ultra 9 386H ｜ RTX 5070 Ti 12GB（125W）｜ 32GB DDR5 雙插槽（可自擴至 128GB）｜ 2TB 直給（另 1 空 M.2 槽）｜ 16" 2.5K 240Hz OLED ｜ 16.65~19.99mm / 1.99kg ｜ 90Wh</li>
+    <li>唯一同時滿足全部硬約束的香港官方渠道機型：U9 ✓、5070 Ti ✓、2TB 直給 ✓、厚度 2cm 級 ✓；記憶體雖為 32GB，但雙 SODIMM 插槽可自行擴至 128GB ✓</li>
+    <li><b>到手加裝</b>：替換為 2×32GB DDR5 SODIMM（約 HK$1,800，如 Crucial／金士頓 DDR5-5600）→ 64GB</li>
+    <li><b>落袋價</b>：約 HK$31,800（≈ 2.9 萬 RMB）</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>② 手提電腦備選一（換品牌＋16GB 顯存一步到位）：ROG Zephyrus G16 2026 GU606AW-TB109W —— 街頭 HK$38,980 起</h3>
+  <ul>
+    <li><b>官方規格頁</b>：<a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">rog.asus.com/hk</a> ｜ <b>街頭比價</b>：<a href="https://www.price.com.hk/product.php?p=690679&ct=review">price.com.hk</a>（HKTVmall 華碩官方旗艦 HK$41,998）</li>
+    <li><b>配置</b>：Ultra 9 386H ｜ RTX 5080 16GB ｜ 64GB 板載直給 ｜ 1TB（雙 M.2，自加 2TB 盤約 HK$1,100）｜ 1.49~1.79cm / 1.95kg</li>
+    <li><b>適用場景</b>：公司不認可 MSI，或想要 16GB 顯存且 64GB 免動手（板載直給）</li>
+    <li><b>落袋價</b>：約 HK$40,100 ~ 43,100（含 2TB 盤）≈ 3.7~4.0 萬 RMB</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>③ 手提電腦備選二（最便宜＋第三品牌）：HP OMEN MAX 16 5070 Ti（16-ah0017TX）—— HK$28,999</h3>
+  <ul>
+    <li><b>官網</b>：<a href="https://www.hp.com/hk-en/shop/laptops-tablets/laptops/gaming-laptops.html">hp.com/hk-en 電競手提電腦列表</a>（頁面標註 In Stock；5080 版已停售）</li>
+    <li>⚠️ <b>兩個必核事項</b>：機身厚度需到店實測 ≤2cm；記憶體插槽／硬碟槽位能否擴到 64GB／2TB</li>
+    <li><b>最後退路</b>：若以上三款都買不到，聯想 Legion Pro 7i Gen 10（5070 Ti，街頭 HK$19,480 起，厚約 2.6cm）價格最低、聯想品牌企業採購最友好，代價是接受厚度妥協</li>
+  </ul>
+</div>
+
+<div class="verdict">
+  <h3>① 伺服器首選（公司指定 Dell）：Dell Pro Precision 9 T2 —— 底價 HK$38,001.26</h3>
+  <ul>
+    <li><b>配置頁</b>：<a href="https://www.dell.com/zh-hk/shop/cty/pdp/spd/dell-pro-precision-9-t2-workstation/xcto_pw9t2260_apac">dell.com/zh-hk 配置頁</a>（底配已含 12 核 Xeon 634，無需升級 CPU）</li>
+    <li><b>目標配置</b>：+ RTX Pro 4500 Blackwell 32GB + 64GB ECC + 2TB ≈ <b>HK$7.5 ~ 8.2 萬</b>（加價項官網不公開，走企業銷售報價）</li>
+    <li><b>預算版</b>：+ RTX Pro 4000 Blackwell 24GB ≈ HK$6.8 ~ 7.5 萬——24GB 剛好裝 30B-A3B Q4（18GB）＋ BGE 全套（5GB）≈ 23GB，KV cache 餘量小</li>
+    <li>GPU 選項（官網實測）：Pro 2000 16GB ／ Pro 4000 24GB（可 3 卡）／ Pro 4500 32GB（雙卡）／ Pro 5000 48GB ／ Pro 5000 工作站版 72GB</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>② 伺服器品牌替代：聯想 ThinkStation P5 —— 街頭 HK$20,390 起</h3>
+  <ul>
+    <li><b>官網</b>：<a href="https://www.lenovo.com/hk/usd/zh/p/workstations/thinkstation-p-series/thinkstation-p5-gen-2-intel-tower-workstation/len102s0024">lenovo.com/hk（P5 Gen 2）</a></li>
+    <li>GPU 選項與 Dell 同生態（RTX Pro 4500 32GB / 5000 48GB / 6000 Max-Q 96GB），底價比 Dell 便宜 1 萬+</li>
+    <li><b>目標配置</b>：+ Pro 4500 32GB + W5 級 + 64GB ≈ <b>HK$6.5 ~ 7.5 萬</b></li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>③ 伺服器性價比之王（自組，非品牌整機）：RTX 5090D 32GB 塔式 —— ≈ HK$3.4 ~ 4 萬</h3>
+  <ul>
+    <li>配置：RTX 5090D 32GB + R9 9950X + X670E（雙卡預留）+ 96GB DDR5 + 1TB/4TB NVMe + 1600W</li>
+    <li>唯一以一半價格拿到 32GB 顯存的路；深水埗黃金／高登裝機商或 price.com.hk 比價</li>
+    <li>缺點：無企業整機保養；公司採購如不允許自組，此項跳過</li>
+  </ul>
+</div>
+
+<h2>二、需求與硬約束</h2>
 <div class="card">
 <ul>
-  <li><b>用途</b>：FastAgent 企业 Agent 平台的开发机——本地验证 RAG/Agent 流程（7B 级模型 + BGE-M3/reranker 全套），高需求算法全部走塔式服务器（RTX 5090D 32GB）与公司 H20。</li>
-  <li><b>处理器</b>：Intel Core Ultra 9（U9 级）</li>
-  <li><b>内存</b>：最终 64GB（官网无合适配置时，必须支持自行扩展）</li>
-  <li><b>硬盘</b>：≥ 2TB（可直给，或双 M.2 自加）</li>
-  <li><b>显卡</b>：RTX 5070 Ti 12GB 或 RTX 5080 16GB（8GB 机型一票否决：装不下 7B Q4 + BGE 全套约 9~10GB）</li>
+  <li><b>用途</b>：FastAgent 企業 Agent 平台的開發機——本地驗證 RAG／Agent 流程（7B 級模型 + BGE-M3／reranker 全套），高需求算法全部走伺服器（32GB 級顯存）與公司 H20。</li>
+  <li><b>處理器</b>：Intel Core Ultra 9（U9 級）</li>
+  <li><b>記憶體</b>：最終 64GB（官網無合適配置時，必須支援自行擴展）</li>
+  <li><b>硬碟</b>：≥ 2TB（可直給，或雙 M.2 自加）</li>
+  <li><b>顯示卡</b>：RTX 5070 Ti 12GB 或 RTX 5080 16GB（8GB 機型一票否決：裝不下 7B Q4 + BGE 全套約 9~10GB）</li>
   <li><b>厚度</b>：2cm 左右，不能太厚（背包限制）</li>
-  <li><b>采购渠道</b>：香港（官方商城/街头），机械革命等大陆品牌无港行渠道，路线失效</li>
+  <li><b>採購渠道</b>：香港（官方商城／街頭）；伺服器公司指定 Dell 品牌優先，備有非 Dell 替代路線</li>
 </ul>
 </div>
 
-<h2>二、香港官方渠道候选机型总表</h2>
+<h2>三、手提電腦候選機型總表（香港官方渠道）</h2>
 <table>
   <tr>
-    <th>机型</th><th>官方网址</th><th>GPU</th><th>CPU</th><th>内存</th><th>硬盘</th>
-    <th>厚度/重量</th><th>官方价</th><th>街头价</th><th>判定</th>
+    <th>機型</th><th>官方網址</th><th>GPU</th><th>CPU</th><th>記憶體</th><th>硬碟</th>
+    <th>厚度／重量</th><th>官方價</th><th>街頭價</th><th>判定</th>
   </tr>
   <tr class="pick">
-    <td><b>MSI Stealth 16 AI+ B3WH</b><br><span class="small">（首选）</span></td>
+    <td><b>MSI Stealth 16 AI+ B3WH</b><br><span class="small">（首選）</span></td>
     <td><a href="https://hk-store.msi.com/products/stealth-16-ai-b3wh">hk-store.msi.com/products/stealth-16-ai-b3wh</a></td>
     <td>5070 Ti 12GB（125W）</td><td>Ultra 9 386H</td>
-    <td>32GB 双 SODIMM<br><span class="small">可自扩 128GB</span></td><td><b>2TB 直给</b><br><span class="small">另有第 2 个 M.2</span></td>
+    <td>32GB 雙 SODIMM<br><span class="small">可自擴 128GB</span></td><td><b>2TB 直給</b><br><span class="small">另有第 2 個 M.2</span></td>
     <td>16.65~19.99mm / 1.99kg</td>
     <td><b>HK$29,999</b><br><span class="small">原 32,999</span></td>
     <td>—</td>
-    <td class="ok">✓ 全部达标</td>
+    <td class="ok">✓ 全部達標</td>
   </tr>
   <tr>
     <td>MSI Stealth 16 AI+ B3WI</td>
     <td><a href="https://hk-store.msi.com/products/stealth-16-ai-b3wi">hk-store.msi.com/products/stealth-16-ai-b3wi</a></td>
     <td>5080 16GB</td><td>Ultra 9 386H</td>
-    <td>32GB 双 SODIMM<br><span class="small">可自扩 128GB</span></td><td>2TB 直给</td>
+    <td>32GB 雙 SODIMM<br><span class="small">可自擴 128GB</span></td><td>2TB 直給</td>
     <td>16.65~19.99mm / 1.99kg</td>
     <td>HK$39,999<br><span class="small">原 44,999</span></td>
     <td>—</td>
-    <td class="warn">达标但贵 HK$10,000 只换 4GB 显存</td>
+    <td class="warn">達標但貴 HK$10,000 只換 4GB 顯存</td>
   </tr>
   <tr>
     <td>MSI Raider 16 MAX HX</td>
     <td><a href="https://hk-store.msi.com/products/raider-16-max-hx-b2wi-007hk">hk-store.msi.com/products/raider-16-max-hx-b2wi-007hk</a></td>
-    <td>5080 16GB（满血 175W）</td><td>Ultra 9 290HX Plus</td>
-    <td>32GB 双 SODIMM</td><td>2TB 直给</td>
+    <td>5080 16GB（滿血 175W）</td><td>Ultra 9 290HX Plus</td>
+    <td>32GB 雙 SODIMM</td><td>2TB 直給</td>
     <td>21.95~28.85mm / 2.6kg</td>
     <td>HK$38,999<br><span class="small">原 42,999</span></td>
     <td>—</td>
-    <td class="no">✗ 超厚，超出 2cm 约束</td>
+    <td class="no">✗ 超厚，超出 2cm 約束</td>
   </tr>
   <tr>
     <td>ROG Zephyrus G16 2026<br>GU606AR-TB004W</td>
-    <td><a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">rog.asus.com/hk（G16 2026 规格页）</a></td>
+    <td><a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">rog.asus.com/hk（G16 2026 規格頁）</a></td>
     <td>5070 Ti 12GB</td><td>Ultra 9 386H</td>
-    <td>32GB <b>板载（不可扩）</b></td><td>1TB</td>
+    <td>32GB <b>板載（不可擴）</b></td><td>1TB</td>
     <td>1.49~1.79cm / 1.95kg</td>
     <td>HK$31,998</td>
     <td>—</td>
-    <td class="no">✗ 板载 32GB 改不了，不满足 64GB</td>
+    <td class="no">✗ 板載 32GB 改不了，不滿足 64GB</td>
   </tr>
   <tr>
-    <td>ROG Zephyrus G16 2026<br>GU606AW-TB109W<br><span class="small">（备选一）</span></td>
-    <td><a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">rog.asus.com/hk（G16 2026 规格页）</a><br>
-        <span class="small">街头价：</span><a href="https://www.price.com.hk/product.php?p=690679&ct=review">price.com.hk 比价页</a></td>
+    <td>ROG Zephyrus G16 2026<br>GU606AW-TB109W<br><span class="small">（備選一）</span></td>
+    <td><a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">rog.asus.com/hk（G16 2026 規格頁）</a><br>
+        <span class="small">街頭價：</span><a href="https://www.price.com.hk/product.php?p=690679&ct=review">price.com.hk 比價頁</a></td>
     <td>5080 16GB</td><td>Ultra 9 386H</td>
-    <td><b>64GB 板载直给</b></td><td>1TB<br><span class="small">双 M.2 可自加 2TB</span></td>
+    <td><b>64GB 板載直給</b></td><td>1TB<br><span class="small">雙 M.2 可自加 2TB</span></td>
     <td>1.49~1.79cm / 1.95kg</td>
-    <td>HK$41,998<br><span class="small">HKTVmall 官方旗舰</span></td>
+    <td>HK$41,998<br><span class="small">HKTVmall 官方旗艦</span></td>
     <td>HK$38,980 ~ 41,998</td>
-    <td class="warn">16GB 档可选，比 B3WH 贵约 1 万</td>
+    <td class="warn">16GB 檔可選，比 B3WH 貴約 1 萬</td>
   </tr>
   <tr>
     <td>ROG Zephyrus G16 2026<br>GU606AX-TB003W</td>
-    <td><a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">rog.asus.com/hk（G16 2026 规格页）</a></td>
+    <td><a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">rog.asus.com/hk（G16 2026 規格頁）</a></td>
     <td>5090 24GB</td><td>Ultra 9 386H</td>
-    <td>64GB 板载</td><td>2TB</td>
+    <td>64GB 板載</td><td>2TB</td>
     <td>1.49~1.79cm / 1.95kg</td>
     <td>HK$49,998</td>
     <td>HK$43,990 ~ 47,998</td>
-    <td class="no">✗ 超预算；笔记本 5090 溢价过大</td>
+    <td class="no">✗ 超預算；手提電腦 5090 溢價過大</td>
   </tr>
   <tr>
-    <td>HP OMEN MAX 16（16-ah0017TX）<br><span class="small">（备选二）</span></td>
-    <td><a href="https://www.hp.com/hk-en/shop/laptops-tablets/laptops/gaming-laptops.html">hp.com/hk-en（游戏本列表页）</a></td>
-    <td>5070 Ti 12GB</td><td>U9 级</td>
-    <td>配置细节待核</td><td>配置细节待核</td>
-    <td>未标注（性能线，需到店实测 ≤2cm 才买）</td>
+    <td>HP OMEN MAX 16（16-ah0017TX）<br><span class="small">（備選二）</span></td>
+    <td><a href="https://www.hp.com/hk-en/shop/laptops-tablets/laptops/gaming-laptops.html">hp.com/hk-en（電競手提電腦列表頁）</a></td>
+    <td>5070 Ti 12GB</td><td>U9 級</td>
+    <td>配置細節待核</td><td>配置細節待核</td>
+    <td>未標註（效能線，需到店實測 ≤2cm 才買）</td>
     <td>HK$28,999</td>
     <td>—</td>
-    <td class="warn">△ 备选二：便宜，但厚度与内存插槽必须核实</td>
+    <td class="warn">△ 備選二：便宜，但厚度與記憶體插槽必須核實</td>
   </tr>
   <tr>
     <td>Lenovo Legion Pro 7i Gen 10<br>（83F5CTO1WWHK1/2）</td>
-    <td><a href="https://www.lenovo.com/hk/en/search?text=Legion%20Pro%207i">lenovo.com/hk（官网搜索）</a></td>
+    <td><a href="https://www.lenovo.com/hk/en/search?text=Legion%20Pro%207i">lenovo.com/hk（官網搜尋）</a></td>
     <td>5070 Ti 12GB</td><td>Ultra 9 275HX</td>
     <td>32GB（SODIMM）</td><td>1TB</td>
-    <td>约 2.6cm / 2.7kg（厚线）</td>
-    <td>官网被反爬，未取到直价</td>
+    <td>約 2.6cm / 2.7kg（厚線）</td>
+    <td>官網被反爬，未取到直價</td>
     <td>HK$19,480 ~ 23,348</td>
-    <td class="no">✗ 便宜但超厚（2.6cm），违背「2cm 左右」</td>
+    <td class="no">✗ 便宜但超厚（2.6cm），違背「2cm 左右」</td>
   </tr>
   <tr>
     <td>Dell Pro Precision 7 系列 16<br>（PW716260）</td>
-    <td><a href="https://www.dell.com/zh-hk/shop/dell-%E7%AD%86%E8%A8%98%E5%9E%8B%E9%9B%BB%E8%85%A6/dell-pro-precision-7-%E7%B3%BB%E5%88%97-16-%E7%AD%86%E8%A8%98%E5%9E%8B%E9%9B%BB%E8%85%A6/spd/dell-pro-precision-pw716260-laptop/xcto_pw716260_apac?configurationid=a954ff06-3561-47df-aa40-2f4f81e2306a">dell.com/zh-hk 配置页</a></td>
-    <td>天花板 RTX Pro 3000 12GB<br><span class="small">当前选中为 Intel Arc 核显</span></td><td>Ultra X7 368H</td>
-    <td>64GB 可选</td><td>当前 512GB</td>
-    <td>未标注（7 系列工作站历来 2.5kg+）</td>
-    <td>HK$46,798.60<br><span class="small">核显版价</span></td>
+    <td><a href="https://www.dell.com/zh-hk/shop/dell-%E7%AD%86%E8%A8%98%E5%9E%8B%E9%9B%BB%E8%85%A6/dell-pro-precision-7-%E7%B3%BB%E5%88%97-16-%E7%AD%86%E8%A8%98%E5%9E%8B%E9%9B%BB%E8%85%A6/spd/dell-pro-precision-pw716260-laptop/xcto_pw716260_apac?configurationid=a954ff06-3561-47df-aa40-2f4f81e2306a">dell.com/zh-hk 配置頁</a></td>
+    <td>天花板 RTX Pro 3000 12GB<br><span class="small">當前選中為 Intel Arc 核顯</span></td><td>Ultra X7 368H</td>
+    <td>64GB 可選</td><td>當前 512GB</td>
+    <td>未標註（7 系列工作站歷來 2.5kg+）</td>
+    <td>HK$46,798.60<br><span class="small">核顯版價</span></td>
     <td>—</td>
-    <td class="no">✗ 无 16GB 档、核显起步 4.35 万、性价比崩</td>
+    <td class="no">✗ 無 16GB 檔、核顯起步 4.35 萬、性價比崩</td>
   </tr>
 </table>
-<div class="note">ROG G16 2026 另有 3 个 SKU（GU606AR-TB102S、GU606AW-TB110A、GU606AX-TB132S）配置细节未能从官网静态页核实，因 5070 Ti 版均为板载内存、5090 版超预算，不影响本报告结论。</div>
+<div class="note">ROG G16 2026 另有 3 個 SKU（GU606AR-TB102S、GU606AW-TB110A、GU606AX-TB132S）配置細節未能從官網靜態頁核實，因 5070 Ti 版均為板載記憶體、5090 版超預算，不影響本報告結論。</div>
 
-<h2>三、已排除机型与理由（含品牌级结论）</h2>
+<h2>四、已排除機型與理由（含品牌級結論）</h2>
 <table>
-  <tr><th>机型/系列</th><th>排除理由</th><th>参考链接</th></tr>
-  <tr><td>机械革命 翼龙系列（原大陆首选）</td><td>香港无官方渠道，无法按你的采购方式购买</td><td>—</td></tr>
-  <tr><td>ROG 幻14 Air 全系</td><td>板载 32GB 封顶、无 64GB 档</td><td><a href="https://rog.asus.com/hk/">rog.asus.com/hk</a></td></tr>
-  <tr><td>ROG 幻16 Air 2026 全系</td><td>板载内存 + 起价暴涨 50%+；凑 64GB 被迫上 5080/5090 档（3.6~4.6 万 HK$）</td><td><a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">G16 2026 规格页</a></td></tr>
-  <tr><td>ThinkPad P16 Gen 3</td><td>中国区在售最高 RTX Pro 3000（与 5070 Ti 同芯片），但 TGP 限 90/105W、整机 3 万+，溢价无价值</td><td><a href="https://psref.lenovo.com/Product/ThinkPad/ThinkPad_P16_Gen_3">PSREF</a></td></tr>
-  <tr><td>ThinkPad P1 Gen 8</td><td>顶配 RTX Pro 2000 仅 8GB，装不下 7B + BGE 全套</td><td><a href="https://psref.lenovo.com/Product/ThinkPad/ThinkPad_P16_Gen_3">PSREF（同系列）</a></td></tr>
-  <tr><td>Dell XPS / Premium 16</td><td>轻薄设计本独显上限 8~12GB，达不到底线</td><td><a href="https://www.dell.com/zh-hk/shop/">dell.com/zh-hk</a></td></tr>
-  <tr><td>Dell Pro Max 16/18 Plus</td><td>16GB 版（RTX Pro 4000）4 万起，超预算</td><td><a href="https://www.dell.com/zh-hk/shop/">dell.com/zh-hk</a></td></tr>
-  <tr><td>MacBook（全系）</td><td>无 NVIDIA GPU，vLLM/SGLang/TEI 的 CUDA 栈无法运行</td><td>—</td></tr>
-  <tr><td>RTX 5070 8GB / 5060 等</td><td>8GB 装不下 7B Q4 + BGE-M3 + reranker + KV（约 9~10GB）</td><td><a href="https://www.nvidia.cn/products/workstations/professional-laptops/compare/">NVIDIA 官方对比</a></td></tr>
+  <tr><th>機型／系列</th><th>排除理由</th><th>參考連結</th></tr>
+  <tr><td>機械革命 翼龍系列（原大陸首選）</td><td>香港無官方渠道，無法按你的採購方式購買</td><td>—</td></tr>
+  <tr><td>ROG 幻14 Air 全系</td><td>板載 32GB 封頂、無 64GB 檔</td><td><a href="https://rog.asus.com/hk/">rog.asus.com/hk</a></td></tr>
+  <tr><td>ROG 幻16 Air 2026 全系</td><td>板載記憶體 + 起價暴漲 50%+；湊 64GB 被迫上 5080/5090 檔（3.6~4.6 萬 HK$）</td><td><a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">G16 2026 規格頁</a></td></tr>
+  <tr><td>ThinkPad P16 Gen 3</td><td>中國區在售最高 RTX Pro 3000（與 5070 Ti 同芯片），但 TGP 限 90/105W、整機 3 萬+，溢價無價值</td><td><a href="https://psref.lenovo.com/Product/ThinkPad/ThinkPad_P16_Gen_3">PSREF</a></td></tr>
+  <tr><td>ThinkPad P1 Gen 8</td><td>頂配 RTX Pro 2000 僅 8GB，裝不下 7B + BGE 全套</td><td><a href="https://psref.lenovo.com/Product/ThinkPad/ThinkPad_P16_Gen_3">PSREF（同系列）</a></td></tr>
+  <tr><td>Dell XPS / Premium 16</td><td>輕薄設計本獨顯上限 8~12GB，達不到底線</td><td><a href="https://www.dell.com/zh-hk/shop/">dell.com/zh-hk</a></td></tr>
+  <tr><td>Dell Pro Max 16/18 Plus</td><td>16GB 版（RTX Pro 4000）4 萬起，超預算</td><td><a href="https://www.dell.com/zh-hk/shop/">dell.com/zh-hk</a></td></tr>
+  <tr><td>MacBook（全系）</td><td>無 NVIDIA GPU，vLLM/SGLang/TEI 的 CUDA 棧無法運行</td><td>—</td></tr>
+  <tr><td>RTX 5070 8GB / 5060 等</td><td>8GB 裝不下 7B Q4 + BGE-M3 + reranker + KV（約 9~10GB）</td><td><a href="https://www.nvidia.cn/products/workstations/professional-laptops/compare/">NVIDIA 官方對比</a></td></tr>
 </table>
 
-<h2>四、服务器方案（公司指定：仅 Dell 品牌，香港官网采购）</h2>
-<div class="note">Dell 官网不提供 GeForce 5090D，AI 显存只能通过专业卡（RTX Pro）购买；同显存价格约为自组 5090D 方案的两倍。所有加价项官网不公开显示，正式报价需走「聯絡銷售」。</div>
+<h2>五、伺服器詳細方案</h2>
+<div class="note">Dell 官網不提供 GeForce 5090D，AI 顯存只能透過專業卡（RTX Pro）購買；同顯存價格約為自組 5090D 方案的兩倍。所有加價項官網不公開顯示，正式報價需走「聯絡銷售」。</div>
+<h3>5.1 Dell 路線（公司指定，香港官網實測）</h3>
 <table>
-  <tr><th>推荐</th><th>型号（官网链接）</th><th>底价（官网实测）</th><th>GPU 选项（官网实测）</th><th>目标配置与估价</th></tr>
+  <tr><th>推薦</th><th>型號（官網連結）</th><th>底價（官網實測）</th><th>GPU 選項（官網實測）</th><th>目標配置與估價</th></tr>
   <tr class="pick">
-    <td><b>① 首选（新平台）</b></td>
-    <td>Dell Pro Precision 9 T2（xcto_pw9t2260_apac）<br><a href="https://www.dell.com/zh-hk/shop/cty/pdp/spd/dell-pro-precision-9-t2-workstation/xcto_pw9t2260_apac">dell.com/zh-hk 配置页</a></td>
+    <td><b>① 首選（新平台）</b></td>
+    <td>Dell Pro Precision 9 T2（xcto_pw9t2260_apac）<br><a href="https://www.dell.com/zh-hk/shop/cty/pdp/spd/dell-pro-precision-9-t2-workstation/xcto_pw9t2260_apac">dell.com/zh-hk 配置頁</a></td>
     <td><b>HK$38,001.26</b><br><span class="small">底配已含 12 核 Xeon 634</span></td>
-    <td>Pro 2000 16GB ｜ <b>Pro 4000 Blackwell 24GB（可 3 卡）</b> ｜ <b>Pro 4500 Blackwell 32GB（双卡）</b> ｜ Pro 5000 48GB ｜ Pro 5000 工作站版 72GB（300W）</td>
-    <td>+ Pro 4500 32GB + 64GB ECC + 2TB ≈ <b>HK$7.5 ~ 8.2 万</b>（加价未公开，走企业销售报价）</td>
+    <td>Pro 2000 16GB ｜ <b>Pro 4000 Blackwell 24GB（可 3 卡）</b> ｜ <b>Pro 4500 Blackwell 32GB（雙卡）</b> ｜ Pro 5000 48GB ｜ Pro 5000 工作站版 72GB（300W）</td>
+    <td>+ Pro 4500 32GB + 64GB ECC + 2TB ≈ <b>HK$7.5 ~ 8.2 萬</b>（加價未公開，走企業銷售報價）</td>
   </tr>
   <tr>
-    <td><b>② 同族高阶（多卡预留）</b></td>
+    <td><b>② 同族高階（多卡預留）</b></td>
     <td>Dell Pro Precision 9 T4 / T6</td>
     <td>T4：HK$50,780.92<br>T6：HK$68,686.60</td>
-    <td>推断比 T2 支持更多卡位/更大电源（3~4 卡级）</td>
-    <td>单卡 32GB 场景用不上；未来 3~4 卡扩展再选</td>
+    <td>推斷比 T2 支援更多卡位／更大電源（3~4 卡級）</td>
+    <td>單卡 32GB 場景用不上；未來 3~4 卡擴展再選</td>
   </tr>
   <tr>
-    <td><b>③ 旧平台备选</b></td>
-    <td>Precision 5860 促销款（promo-fws5860hk_vp）</td>
+    <td><b>③ 舊平台備選</b></td>
+    <td>Precision 5860 促銷款（promo-fws5860hk_vp）</td>
     <td>HK$33,799.03<br><span class="small">底配 6 核 W3-2423，需升 CPU</span></td>
     <td>同 T2 的 Pro 卡家族</td>
-    <td>+ Pro 4500 + W5-2465X + 64GB ≈ HK$8 万±</td>
+    <td>+ Pro 4500 + W5-2465X + 64GB ≈ HK$8 萬±</td>
   </tr>
   <tr>
-    <td><b>④ 正式服务器（参考）</b></td>
+    <td><b>④ 正式伺服器（參考）</b></td>
     <td>PowerEdge T560（aspet560）</td>
     <td>HK$475,438.97</td>
-    <td>服务器级 GPU（L40S/H100/H20 等）</td>
-    <td>仅当公司按正式服务器预算采购时考虑；价格超出本方案预算量级</td>
+    <td>伺服器級 GPU（L40S/H100/H20 等）</td>
+    <td>僅當公司按正式伺服器預算採購時考慮；價格超出本方案預算量級</td>
   </tr>
 </table>
 <div class="card">
-  <p><b>对比参考（自组方案）</b>：自组 RTX 5090D 32GB 塔式约 HK$3.4~4.0 万（≈3.1~3.7 万 RMB），Dell 同显存（Pro 4500 32GB）约 HK$7.5~8.2 万——差价约一倍。若公司强制 Dell：首选 Pro Precision 9 T2（底配已含 12 核 Xeon 634，无需升级 CPU）；显存按 24GB（Pro 4000，未来可扩至 3 卡）或 32GB（Pro 4500）执行；务必通过企业销售渠道拿折扣报价（通常低于配置器零售价）。所有底配 GPU 均为 RTX A400（4GB）级，显卡必须升级；16GB 的 Pro 2000 装不下模型，直接排除。</p>
+  <p><b>對比參考（自組方案）</b>：自組 RTX 5090D 32GB 塔式約 HK$3.4~4.0 萬（≈3.1~3.7 萬 RMB），Dell 同顯存（Pro 4500 32GB）約 HK$7.5~8.2 萬——差價約一倍。若公司強制 Dell：首選 Pro Precision 9 T2（底配已含 12 核 Xeon 634，無需升級 CPU）；顯存按 24GB（Pro 4000，未來可擴至 3 卡）或 32GB（Pro 4500）執行；務必透過企業銷售渠道拿折扣報價（通常低於配置器零售價）。所有底配 GPU 均為 RTX A400（4GB）級，顯示卡必須升級；16GB 的 Pro 2000 裝不下模型，直接排除。</p>
 </div>
-<div class="card">
-  <h3>非 Dell 路线（公司不接受 Dell 价格时）</h3>
-  <table>
-    <tr><th>路线</th><th>机型</th><th>底价（实测）</th><th>32GB 显存方案估价</th><th>特点</th></tr>
-    <tr>
-      <td><b>① 自组（性价比之王）</b></td>
-      <td>自装 5090D 塔式（5090D + 9950X + X670E + 96GB + 1600W）</td>
-      <td>约 HK$3.4~4.0 万</td>
-      <td>即底价</td>
-      <td>唯一以一半价格拿 32GB 显存的路；深水埗黄金/高登装机商或 price.com.hk 比价；无企业整机保修</td>
-    </tr>
-    <tr>
-      <td><b>② 联想 ThinkStation P5（品牌机首选替代）</b></td>
-      <td>P5 / P5 Gen 2（<a href="https://www.lenovo.com/hk/usd/zh/p/workstations/thinkstation-p-series/thinkstation-p5-gen-2-intel-tower-workstation/len102s0024">lenovo.com/hk</a>）</td>
-      <td>街头 HK$20,390 起（无独显底配）；官网 Gen 2 HK$36,560；HKTVmall 官方店 HK$24,325</td>
-      <td>+ Pro 4500 32GB + W5 级 + 64GB ≈ HK$6.5~7.5 万</td>
-      <td>GPU 选项与 Dell 同生态（Pro 4500 32GB / 5000 48GB / 6000 Max-Q 96GB），底价便宜 1 万+，联想企业采购熟悉度最高</td>
-    </tr>
-    <tr>
-      <td>③ Supermicro GPU 工作站</td>
-      <td>香港代理商渠道</td>
-      <td>需询价</td>
-      <td>需询价</td>
-      <td>唯一「品牌整机 + GeForce 5090D」的折中</td>
-    </tr>
-    <tr>
-      <td>④ HP Z 系列（Z4/Z6）</td>
-      <td>hp.com/hk 工作站</td>
-      <td>官网无报价（仅导航页）</td>
-      <td>需联系 HP/渠道商</td>
-      <td>同为 Pro 卡生态，数据不足仅作备选</td>
-    </tr>
-    <tr>
-      <td>⑤ 云 GPU</td>
-      <td>AutoDL / AWS HK 等</td>
-      <td>按需计费</td>
-      <td>—</td>
-      <td>「内网数据不出域」原则下基本排除</td>
-    </tr>
-  </table>
-</div>
+<h3>5.2 非 Dell 路線（公司不接受 Dell 價格時）</h3>
+<table>
+  <tr><th>路線</th><th>機型</th><th>底價（實測）</th><th>32GB 顯存方案估價</th><th>特點</th></tr>
+  <tr>
+    <td><b>① 自組（性價比之王）</b></td>
+    <td>自裝 5090D 塔式（5090D + 9950X + X670E + 96GB + 1600W）</td>
+    <td>約 HK$3.4~4.0 萬</td>
+    <td>即底價</td>
+    <td>唯一以一半價格拿 32GB 顯存的路；深水埗黃金／高登裝機商或 price.com.hk 比價；無企業整機保養</td>
+  </tr>
+  <tr>
+    <td><b>② 聯想 ThinkStation P5（品牌機首選替代）</b></td>
+    <td>P5 / P5 Gen 2（<a href="https://www.lenovo.com/hk/usd/zh/p/workstations/thinkstation-p-series/thinkstation-p5-gen-2-intel-tower-workstation/len102s0024">lenovo.com/hk</a>）</td>
+    <td>街頭 HK$20,390 起（無獨顯底配）；官網 Gen 2 HK$36,560；HKTVmall 官方店 HK$24,325</td>
+    <td>+ Pro 4500 32GB + W5 級 + 64GB ≈ HK$6.5~7.5 萬</td>
+    <td>GPU 選項與 Dell 同生態（Pro 4500 32GB / 5000 48GB / 6000 Max-Q 96GB），底價便宜 1 萬+，聯想企業採購熟悉度最高</td>
+  </tr>
+  <tr>
+    <td>③ Supermicro GPU 工作站</td>
+    <td>香港代理商渠道</td>
+    <td>需詢價</td>
+    <td>需詢價</td>
+    <td>唯一「品牌整機 + GeForce 5090D」的折中</td>
+  </tr>
+  <tr>
+    <td>④ HP Z 系列（Z4/Z6）</td>
+    <td>hp.com/hk 工作站</td>
+    <td>官網無報價（僅導航頁）</td>
+    <td>需聯繫 HP／渠道商</td>
+    <td>同為 Pro 卡生態，數據不足僅作備選</td>
+  </tr>
+  <tr>
+    <td>⑤ 雲 GPU</td>
+    <td>AutoDL / AWS HK 等</td>
+    <td>按需計費</td>
+    <td>—</td>
+    <td>「內網數據不出域」原則下基本排除</td>
+  </tr>
+</table>
 
-<h2>五、最终结论：推荐排序（首选 + 两个备选）</h2>
-<div class="verdict">
-  <h3>① 首选（最优）：MSI Stealth 16 AI+ B3WH —— HK$29,999</h3>
-  <ul>
-    <li><b>购买链接</b>：<a href="https://hk-store.msi.com/products/stealth-16-ai-b3wh">https://hk-store.msi.com/products/stealth-16-ai-b3wh</a></li>
-    <li><b>配置</b>：Ultra 9 386H ｜ RTX 5070 Ti 12GB（125W）｜ 32GB DDR5 双插槽 ｜ 2TB NVMe（+1 空 M.2 槽）｜ 16" 2.5K 240Hz OLED ｜ 16.65~19.99mm / 1.99kg ｜ 90Wh</li>
-    <li><b>它是唯一同时满足全部硬约束的香港官方渠道机型</b>：U9 ✓、5070 Ti ✓、2TB 直给 ✓、厚度 2cm 级 ✓，内存虽为 32GB 但双 SODIMM 插槽可自行扩至 128GB ✓</li>
-    <li><b>到手加装</b>：替换为 2×32GB DDR5 SODIMM（约 HK$1,800，如 Crucial/金士顿 DDR5-5600）→ 64GB</li>
-    <li><b>落袋价</b>：约 HK$31,800（≈ 2.9 万 RMB）</li>
-    <li><b>为什么不选 5080 版（B3WI，HK$39,999）</b>：多花 HK$10,000 只换 4GB 显存；16GB 同样装不下生产级 30B-A3B Q4（约 18GB），本地模型等级由架构分工决定（7B 分流角色），差价投服务器更划算</li>
-  </ul>
-</div>
+<h2>六、搭配建議與注意事項</h2>
 <div class="card">
-  <h3>② 备选一（换品牌 + 16GB 显存一步到位）：ROG Zephyrus G16 2026 GU606AW-TB109W —— 街头 HK$38,980 起</h3>
-  <ul>
-    <li><b>官方规格页</b>：<a href="https://rog.asus.com/hk/laptops/rog-zephyrus/rog-zephyrus-g16-2026/spec/">rog.asus.com/hk</a> ｜ <b>街头比价</b>：<a href="https://www.price.com.hk/product.php?p=690679&ct=review">price.com.hk</a>（HKTVmall 华硕官方旗舰 HK$41,998）</li>
-    <li><b>配置</b>：Ultra 9 386H ｜ RTX 5080 16GB ｜ 64GB 板载直给 ｜ 1TB（双 M.2，自加 2TB 盘约 HK$1,100）｜ 1.49~1.79cm / 1.95kg</li>
-    <li><b>适用场景</b>：公司不认可 MSI、或想 16GB 显存且 64GB 免动手（板载直给）</li>
-    <li><b>落袋价</b>：约 HK$40,100 ~ 43,100（含 2TB 盘）≈ 3.7~4.0 万 RMB——比首选贵约 1 万，预算会顶到上限，需搭配服务器方案 B 或 A-压缩版 + 官方价 5090D</li>
-  </ul>
-</div>
-<div class="card">
-  <h3>③ 备选二（最便宜 + 第三品牌）：HP OMEN MAX 16 5070 Ti（16-ah0017TX）—— HK$28,999</h3>
-  <ul>
-    <li><b>官网</b>：<a href="https://www.hp.com/hk-en/shop/laptops-tablets/laptops/gaming-laptops.html">hp.com/hk-en 游戏本列表</a>（页面标注 In Stock；5080 版已停售）</li>
-    <li>⚠️ <b>两个必核事项</b>：机身厚度需到店实测 ≤2cm；内存插槽/硬盘槽位能否扩到 64GB/2TB</li>
-    <li><b>最后退路</b>：若以上三款都买不到，联想 Legion Pro 7i Gen 10（5070 Ti，街头 HK$19,480 起，厚约 2.6cm）价格最低、联想品牌企业采购最友好，代价是接受厚度妥协</li>
-  </ul>
-</div>
-<div class="verdict">
-  <h3>搭配建议（三档通用）</h3>
-  <ul>
-    <li><b>服务器（公司指定 Dell）</b>：首选 Dell Pro Precision 9 T2 + RTX Pro 4500 Blackwell 32GB（目标配置约 HK$7.5~8.2 万），预算紧张选 Pro 4000 24GB（约 HK$6.8~7.5 万）；总价随笔记本档位约 6~11 万 RMB，远超原 3~6 万预算——正式下单前必须通过 Dell 企业销售拿报价；非 Dell 备选（自组 5090D / 联想 ThinkStation P5）见第四节</li>
-    <li><b>购买顺序</b>：5090D 先买（涨价通道）→ 笔记本下单 → 内存/硬盘加装件</li>
-    <li><b>到手前确认</b>：港行在大陆使用的跨境保修政策（MSI/华硕/HP 均需确认）</li>
-  </ul>
+<ul>
+  <li><b>總預算</b>：手提電腦首選（約 2.9 萬 RMB）＋ Dell T2（HK$7.5~8.2 萬 ≈ 6.9~7.5 萬 RMB）≈ <b>9.8 ~ 10.4 萬 RMB</b>；若伺服器改選自組 5090D（≈3.1~3.7 萬 RMB），合計 ≈ <b>6.0 ~ 6.6 萬 RMB</b></li>
+  <li><b>購買順序</b>：顯示卡先下單（5090D 在漲價通道／Dell Pro 4500 加價未公開，先鎖卡價）→ 手提電腦下單 → 加裝件（記憶體／硬碟）</li>
+  <li><b>保養</b>：港行在大陸使用的跨境保養政策，下單前確認（MSI／華碩／HP 均需確認）</li>
+  <li><b>顯存帳</b>：30B-A3B Q4（約 18GB）＋ BGE-M3（1.5GB）＋ reranker（2.3GB）＋ KV ≈ 23GB——伺服器 24GB 起、32GB 才從容；手提電腦 12GB 跑 7B 級（約 9~10GB），16GB 才能上 14B 級</li>
+</ul>
 </div>
 
 <div class="small">
-  价格来源：MSI 香港官方商城（hk-store.msi.com）、ROG 香港官网（rog.asus.com/hk）、HP 香港官网、Dell 香港官网、HKTVmall 华硕官方旗舰店、price.com.hk 街头比价（2026 年 8 月行情）。显卡与笔记本价格波动大，下单前以官网实时价为准。本报告与 docs/hardware-spec.md 一致，由选型讨论过程生成。
+  價格來源：MSI 香港官方商城（hk-store.msi.com）、ROG 香港官網（rog.asus.com/hk）、HP 香港官網、Dell 香港官網、HKTVmall 華碩官方旗艦店、price.com.hk 街頭比價（2026 年 8 月行情）。顯示卡與手提電腦價格波動大，下單前以官網實時價為準。本報告與 docs/hardware-spec.md 一致，由選型討論過程生成。
 </div>
 
 </div>
