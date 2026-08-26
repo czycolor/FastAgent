@@ -43,6 +43,19 @@
 
 <h2>一、推薦總覽（先看這裡）</h2>
 
+<h3>手提電腦推薦 · Mac 路線（首推）</h3>
+<div class="verdict">
+  <h3>★ MacBook Pro 14 吋 M5 Max 64GB / 2TB —— 約 HK$33,000 ~ 34,000</h3>
+  <ul>
+    <li><b>購買連結</b>：<a href="https://www.apple.com/hk/shop/buy-mac/macbook-pro">apple.com/hk（自選配置：M5 Max／64GB／2TB）</a>；M5 Max 起步 HK$27,999，64GB+2TB 約 HK$33,000~34,000；Apple 認證翻新 HK$27,599 起</li>
+    <li><b>配置</b>：M5 Max（18 核 CPU）｜ 64GB 統一記憶體（614GB/s）｜ 2TB 直給 ｜ 14.2 吋 Liquid Retina XDR ｜ 1.55cm / 1.55kg ｜ 續航 24 小時</li>
+    <li><b>適合你的分工</b>：ASP.NET Core Blazor Web 開發原生支持（Rider + Docker + MySQL + Ollama 全本地方案）；本地部署小模型推理——統一記憶體可跑 30B-A3B Q4 + BGE 全套（Windows 路線 12GB 只到 7B 級）；不訓練，訓練走伺服器</li>
+    <li><b>Revit 二次開發</b>：Parallels Desktop（約 HK$800/年）跑 Windows 11 ARM + VS2022，編譯與日常調試可行（需裝 <b>x64 版 .NET 8 運行庫</b>；Twinmotion／Desktop Connector 不可用）；大型模型測試連公司 Windows 真機遠程兜底</li>
+    <li><b>配套</b>：JetBrains Rider（公司授權，Mac 上 .NET 第一 IDE）或 VS Code + C# Dev Kit（免費）；AppleCare+ 三年約 HK$2,600（建議）；Microsoft Remote Desktop（免費）</li>
+  </ul>
+</div>
+
+<h3>手提電腦推薦 · Windows 路線（需本地 CUDA 或原生 Windows 時）</h3>
 <div class="verdict">
   <h3>① 手提電腦首選：MSI Stealth 16 AI+ B3WH —— 官方 HK$29,999</h3>
   <ul>
@@ -73,6 +86,7 @@
   </ul>
 </div>
 
+<h3>伺服器推薦（公司指定 Dell 優先）</h3>
 <div class="verdict">
   <h3>① 伺服器首選（公司指定 Dell）：Dell Pro Precision 9 T2 —— 底價 HK$38,001.26</h3>
   <ul>
@@ -104,7 +118,7 @@
 <h2>二、需求與硬約束</h2>
 <div class="card">
 <ul>
-  <li><b>用途</b>：FastAgent 企業 Agent 平台的開發機——本地驗證 RAG／Agent 流程（7B 級模型 + BGE-M3／reranker 全套），高需求算法全部走伺服器（32GB 級顯存）與公司 H20。</li>
+  <li><b>用途</b>：FastAgent 企業 Agent 平台的開發機——ASP.NET Core Blazor Web 開發（Mac 原生支持）＋本地部署小模型推理（不訓練，訓練走伺服器）；高需求算法全部走伺服器（32GB 級顯存）與公司 H20；Revit 二次開發走虛擬機或遠程 Windows。</li>
   <li><b>處理器</b>：Intel Core Ultra 9（U9 級）</li>
   <li><b>記憶體</b>：最終 64GB（官網無合適配置時，必須支援自行擴展）</li>
   <li><b>硬碟</b>：≥ 2TB（可直給，或雙 M.2 自加）</li>
@@ -121,7 +135,17 @@
     <th>厚度／重量</th><th>官方價</th><th>街頭價</th><th>判定</th>
   </tr>
   <tr class="pick">
-    <td><b>MSI Stealth 16 AI+ B3WH</b><br><span class="small">（首選）</span></td>
+    <td><b>MacBook Pro 14" M5 Max 64GB/2TB</b><br><span class="small">（Mac 路線首推）</span></td>
+    <td><a href="https://www.apple.com/hk/shop/buy-mac/macbook-pro">apple.com/hk（自選配置）</a></td>
+    <td>M5 Max 統一記憶體 64GB（614GB/s）<br><span class="small">無 CUDA，Ollama/MLX 推理</span></td><td>M5 Max 18 核</td>
+    <td>64GB 統一記憶體<br><span class="small">無法擴充，需一次選對</span></td><td>2TB 直給</td>
+    <td>1.55cm / 1.55kg</td>
+    <td><b>HK$27,999 起</b><br><span class="small">64GB+2TB ≈ HK$33,000~34,000</span></td>
+    <td>翻新 HK$27,599 起</td>
+    <td class="ok">✓ Mac 路線首推</td>
+  </tr>
+  <tr class="pick">
+    <td><b>MSI Stealth 16 AI+ B3WH</b><br><span class="small">（Windows 路線首選）</span></td>
     <td><a href="https://hk-store.msi.com/products/stealth-16-ai-b3wh">hk-store.msi.com/products/stealth-16-ai-b3wh</a></td>
     <td>5070 Ti 12GB（125W）</td><td>Ultra 9 386H</td>
     <td>32GB 雙 SODIMM<br><span class="small">可自擴 128GB</span></td><td><b>2TB 直給</b><br><span class="small">另有第 2 個 M.2</span></td>
@@ -224,7 +248,7 @@
   <tr><td>ThinkPad P1 Gen 8</td><td>頂配 RTX Pro 2000 僅 8GB，裝不下 7B + BGE 全套</td><td><a href="https://psref.lenovo.com/Product/ThinkPad/ThinkPad_P16_Gen_3">PSREF（同系列）</a></td></tr>
   <tr><td>Dell XPS / Premium 16</td><td>輕薄設計本獨顯上限 8~12GB，達不到底線</td><td><a href="https://www.dell.com/zh-hk/shop/">dell.com/zh-hk</a></td></tr>
   <tr><td>Dell Pro Max 16/18 Plus</td><td>16GB 版（RTX Pro 4000）4 萬起，超預算</td><td><a href="https://www.dell.com/zh-hk/shop/">dell.com/zh-hk</a></td></tr>
-  <tr><td>MacBook（全系）</td><td>無 NVIDIA GPU，vLLM/SGLang/TEI 的 CUDA 棧無法運行</td><td>—</td></tr>
+  <tr><td>MacBook（早期評估結論）</td><td>已由「排除」轉為「Mac 路線首推」：前提由「本地跑 CUDA」改為「只部署小模型推理＋不訓練＋Revit 走虛擬機/遠程」；如仍需本地 CUDA 棧（vLLM/SGLang/TEI）則選 Windows 路線</td><td><a href="https://www.apple.com/hk/shop/buy-mac/macbook-pro">apple.com/hk</a></td></tr>
   <tr><td>RTX 5070 8GB / 5060 等</td><td>8GB 裝不下 7B Q4 + BGE-M3 + reranker + KV（約 9~10GB）</td><td><a href="https://www.nvidia.cn/products/workstations/professional-laptops/compare/">NVIDIA 官方對比</a></td></tr>
 </table>
 
@@ -308,10 +332,11 @@
 <h2>六、搭配建議與注意事項</h2>
 <div class="card">
 <ul>
-  <li><b>總預算</b>：手提電腦首選（約 2.9 萬 RMB）＋ Dell T2（HK$7.5~8.2 萬 ≈ 6.9~7.5 萬 RMB）≈ <b>9.8 ~ 10.4 萬 RMB</b>；若伺服器改選自組 5090D（≈3.1~3.7 萬 RMB），合計 ≈ <b>6.0 ~ 6.6 萬 RMB</b></li>
+  <li><b>總預算</b>：手提電腦（Mac 首推 ≈ 3.1 萬 RMB；Windows 路線 MSI B3WH ≈ 2.9 萬 RMB）＋ Dell T2（HK$7.5~8.2 萬 ≈ 6.9~7.5 萬 RMB）≈ <b>10.0 ~ 10.6 萬 RMB</b>；若伺服器改選自組 5090D（≈3.1~3.7 萬 RMB），合計 ≈ <b>6.2 ~ 6.8 萬 RMB</b></li>
   <li><b>購買順序</b>：顯示卡先下單（5090D 在漲價通道／Dell Pro 4500 加價未公開，先鎖卡價）→ 手提電腦下單 → 加裝件（記憶體／硬碟）</li>
-  <li><b>保養</b>：港行在大陸使用的跨境保養政策，下單前確認（MSI／華碩／HP 均需確認）</li>
-  <li><b>顯存帳</b>：30B-A3B Q4（約 18GB）＋ BGE-M3（1.5GB）＋ reranker（2.3GB）＋ KV ≈ 23GB——伺服器 24GB 起、32GB 才從容；手提電腦 12GB 跑 7B 級（約 9~10GB），16GB 才能上 14B 級</li>
+  <li><b>Mac 路線備註</b>：Parallels 給 Windows 分 24~32GB 記憶體；Revit 2026 在 ARM Windows 需裝 x64 版 .NET 8 運行庫；Twinmotion／Desktop Connector 不可用；大型模型測試連公司 Windows 遠程兜底；IDE 用 JetBrains Rider（公司授權）或 VS Code + C# Dev Kit</li>
+  <li><b>保養</b>：港行在大陸使用的跨境保養政策，下單前確認（MSI／華碩／HP 均需確認）；Apple 產品建議 AppleCare+（約 HK$2,600／三年）</li>
+  <li><b>顯存帳</b>：30B-A3B Q4（約 18GB）＋ BGE-M3（1.5GB）＋ reranker（2.3GB）＋ KV ≈ 23GB——伺服器 24GB 起、32GB 才從容；手提電腦：Windows 路線 12GB 跑 7B 級（約 9~10GB）、16GB 上 14B 級；Mac 統一記憶體 64GB 可跑 30B 級</li>
 </ul>
 </div>
 
