@@ -90,8 +90,10 @@
   <h3>① 伺服器首選（公司指定 Dell）：Dell Pro Precision 9 T2 —— 底價 HK$38,001.26</h3>
   <ul>
     <li><b>配置頁</b>：<a href="https://www.dell.com/zh-hk/shop/cty/pdp/spd/dell-pro-precision-9-t2-workstation/xcto_pw9t2260_apac">dell.com/zh-hk 配置頁</a>（底配已含 12 核 Xeon 634，無需升級 CPU）</li>
-    <li><b>目標配置</b>：+ RTX Pro 4500 Blackwell 32GB + 64GB ECC + 2TB ≈ <b>HK$7.5 ~ 8.2 萬</b>（加價項官網不公開，走企業銷售報價）</li>
-    <li><b>預算版</b>：+ RTX Pro 4000 Blackwell 24GB ≈ HK$6.8 ~ 7.5 萬——24GB 剛好裝 30B-A3B Q4（18GB）＋ BGE 全套（5GB）≈ 23GB，KV cache 餘量小</li>
+    <li><b>硬約束</b>：記憶體 ≥ 128GB DDR5 ECC ｜ 硬碟 ≥ 4TB NVMe ｜ GPU 盡可能好</li>
+    <li><b>目標配置（首推）</b>：+ RTX Pro 5000 Blackwell 48GB + 128GB ECC + 4TB ≈ <b>HK$9.0 ~ 10.0 萬</b>——48GB 可跑 30B-A3B FP8 + BGE 全套 + 大 KV cache（加價未公開，走企業銷售報價）</li>
+    <li><b>頂配（可跑 70B 級）</b>：+ RTX Pro 5000 工作站版 72GB（300W）≈ HK$11 萬+——72GB 可裝 70B Q4（約 40GB）＋ BGE 全套</li>
+    <li><b>預算版</b>：+ RTX Pro 4500 Blackwell 32GB + 128GB + 4TB ≈ HK$8.0 ~ 8.8 萬——32GB 跑 30B-A3B Q4 + BGE 全家從容</li>
     <li>GPU 選項（官網實測）：Pro 2000 16GB ／ Pro 4000 24GB（可 3 卡）／ Pro 4500 32GB（雙卡）／ Pro 5000 48GB ／ Pro 5000 工作站版 72GB</li>
   </ul>
 </div>
@@ -250,7 +252,7 @@
     <td>Dell Pro Precision 9 T2（xcto_pw9t2260_apac）<br><a href="https://www.dell.com/zh-hk/shop/cty/pdp/spd/dell-pro-precision-9-t2-workstation/xcto_pw9t2260_apac">dell.com/zh-hk 配置頁</a></td>
     <td><b>HK$38,001.26</b><br><span class="small">底配已含 12 核 Xeon 634</span></td>
     <td>Pro 2000 16GB ｜ <b>Pro 4000 Blackwell 24GB（可 3 卡）</b> ｜ <b>Pro 4500 Blackwell 32GB（雙卡）</b> ｜ Pro 5000 48GB ｜ Pro 5000 工作站版 72GB（300W）</td>
-    <td>+ Pro 4500 32GB + 64GB ECC + 2TB ≈ <b>HK$7.5 ~ 8.2 萬</b>（加價未公開，走企業銷售報價）</td>
+    <td>128GB ECC + 4TB + <b>Pro 5000 Blackwell 48GB</b> ≈ <b>HK$9.0 ~ 10.0 萬</b>（首推）；頂配 72GB 工作站版 ≈ HK$11 萬+；預算版 Pro 4500 32GB ≈ HK$8.0 ~ 8.8 萬（加價未公開，走企業銷售報價）</td>
   </tr>
   <tr>
     <td><b>② 同族高階（多卡預留）</b></td>
@@ -320,10 +322,10 @@
 <h2>六、搭配建議與注意事項</h2>
 <div class="card">
 <ul>
-  <li><b>總預算</b>：手提電腦（首選 MSI B3WH ≈ 2.9 萬 RMB；Dell 第二 ≈ 4.6~5.1 萬 RMB）＋ Dell T2（HK$7.5~8.2 萬 ≈ 6.9~7.5 萬 RMB）≈ <b>11.5 ~ 12.6 萬 RMB</b>；若伺服器改選自組 5090D（≈3.1~3.7 萬 RMB），合計 ≈ <b>7.7 ~ 8.8 萬 RMB</b></li>
+  <li><b>總預算</b>：手提電腦（首選 MSI B3WH ≈ 2.9 萬 RMB）＋ Dell T2（128GB + 4TB + Pro 5000 48GB，HK$9.0~10.0 萬 ≈ 8.3~9.2 萬 RMB）≈ <b>11.2 ~ 12.1 萬 RMB</b>；若伺服器改選自組 5090D（≈3.1~3.7 萬 RMB），合計 ≈ <b>6.0 ~ 6.6 萬 RMB</b></li>
   <li><b>購買順序</b>：顯示卡先下單（5090D 在漲價通道／Dell Pro 4500 加價未公開，先鎖卡價）→ 手提電腦下單 → 加裝件（記憶體／硬碟）</li>
   <li><b>保養</b>：港行在大陸使用的跨境保養政策，下單前確認（MSI／華碩／HP／Dell 均需確認）</li>
-  <li><b>顯存帳</b>：30B-A3B Q4（約 18GB）＋ BGE-M3（1.5GB）＋ reranker（2.3GB）＋ KV ≈ 23GB——伺服器 24GB 起、32GB 才從容；手提電腦：12GB 跑 7B 級（約 9~10GB）、16GB 上 14B 級</li>
+  <li><b>顯存帳</b>：30B-A3B Q4（約 18GB）＋ BGE 全套（5GB）＋ KV ≈ 23GB——伺服器 24GB 起、32GB 從容、<b>48GB 可上 FP8、72GB 可跑 70B Q4</b>；手提電腦：12GB 跑 7B 級（約 9~10GB）、16GB 上 14B 級</li>
 </ul>
 </div>
 
